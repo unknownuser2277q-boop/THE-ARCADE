@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Arcade</title>
+  <style>
+    body {
+      background: black;
+      color: white;
+      text-align: center;
+      font-family: Arial;
+    }
+
+    .game {
+      border: 2px solid white;
+      padding: 20px;
+      margin: 20px;
+      display: inline-block;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>🎮 My Arcade 🎮</h1>
+
+<div class="game" onclick="openGame('snake.html')">
+  🐍 Snake
+</div>
+
+<div class="game" onclick="openGame('clicker.html')">
+  💰 Clicker
+</div>
+
+<script>
+function openGame(game) {
+  window.location.href = game;
+}
+</script>
+
+</body>
+</html>
